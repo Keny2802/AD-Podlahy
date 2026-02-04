@@ -4,8 +4,17 @@ import type {
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AD Podlahy",
+  title: "AD Podlahy | Adam Šimara",
   description: "Specializujeme se na dovoz a čerpání betonových směsí včetně realizace litých podlah.",
+  icons: {
+    icon: [
+      {
+        url: "/fota/logo/logo.png",
+        sizes: "32x32",
+        type: "image/png"
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
