@@ -14,7 +14,7 @@ import Cta from "../components/Cta";
 const Hero = () => {
     return (
         <Fragment>
-            <RelativeOverlayWrapper className="w-full min-h-screen">
+            <RelativeOverlayWrapper className="w-full min-h-screen text-white">
                 <Img
                 fill={true}
                 src="/fota/sekce/hero/transformers.avif"
