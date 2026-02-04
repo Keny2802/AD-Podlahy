@@ -17,7 +17,7 @@ const HeroHeading = ({ ...props }: HeroHeadingType) => {
 
     return (
         <Fragment>
-            <h1 className={clsx(className, "text-4xl md:text-5xl lg:text-[60px] font-extrabold tracking-widest hero-heading-component")}>
+            <h1 className={clsx(className, "text-4xl md:text-5xl lg:text-[60px] font-black tracking-widest hero-heading-component")}>
                 {children}
             </h1>
         </Fragment>
