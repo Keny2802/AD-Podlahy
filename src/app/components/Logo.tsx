@@ -18,7 +18,7 @@ type LogoType = {
     children?: ReactNode;
 };
 
-const Padding = ({ ...props }: LogoType) => {
+const Logo = ({ ...props }: LogoType) => {
     const {
         className,
         width,
@@ -33,13 +33,19 @@ const Padding = ({ ...props }: LogoType) => {
             <Link
             href={isHome ? "" : "/"}>
                 <Image
-                {...(width && height) && { width: width, height: height }}
+                {
+                ...(!width && !height) ?
+                { width: 200, height: 200 }
+                : { width: width, height: height }
+                }
                 src="/fota/logo/logo.png"
                 alt="Logo AD Podlahy"
+                loading="eager"
+                className={clsx(className, "logo-component")}
                 />
             </Link>
         </Fragment>
     );
 };
 
-export default Padding;
+export default Logo;

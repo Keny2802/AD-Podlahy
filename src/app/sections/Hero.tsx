@@ -17,14 +17,16 @@ const Hero = () => {
             <RelativeOverlayWrapper className="w-full min-h-screen text-white">
                 <Img
                 fill={true}
-                src="/fota/sekce/hero/transformers.avif"
+                // src="/fota/sekce/hero/transformers.avif"
+                src="/fota/galerie/foto-galerie-1.avif"
                 alt="Komplexní služby, vše kolem betonu"
+                loading="eager"
                 className="object-cover"
                 />
-                <Wrapper className="absolute inset-0 bg-black/20"></Wrapper>
+                <Wrapper className="absolute inset-0 bg-black/30"></Wrapper>
                 <Padding>
                     <OverlayWrapper>
-                    <HeroHeading>
+                    <HeroHeading className="uppercase">
                         Komplexní služby, vše kolem betonu
                     </HeroHeading>
                     <HeroSubheading>

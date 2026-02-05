@@ -11,6 +11,7 @@ type ImageType = {
     height?: number;
     src: string;
     alt: string;
+    loading?: "eager" | "lazy";
 };
 
 const Img = ({ ...props }: ImageType) => {
@@ -20,7 +21,8 @@ const Img = ({ ...props }: ImageType) => {
         width,
         height,
         src,
-        alt
+        alt,
+        loading
     } = props;
 
     return (
@@ -31,6 +33,12 @@ const Img = ({ ...props }: ImageType) => {
             )}
             src={src}
             alt={alt}
+            {
+                ...(
+                    loading ?
+                    { loading: loading } : { loading: "lazy" }
+                )
+            }
             className={clsx(className, "image-component")}
             />
         </Fragment>
