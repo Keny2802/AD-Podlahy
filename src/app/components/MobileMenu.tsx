@@ -34,31 +34,33 @@ const MobileMenu = ({ ...props }: MobileMenuType) => {
             color="white">
                 <Wrapper className={clsx(className, isMobileMenuClicked ? "translate-x-0 md:-translate-x-full" : "-translate-x-full", "bg-white shadow-md fixed inset-0 z-50 w-[320px] h-full transition-transform duration-300 ease-in-out")}>
                     <Padding className="h-screen flex justify-between flex-col">
-                        <Logo />
-                        <FlexCol
-                        className="mt-4"
-                        gap={6}>
-                            <Padding>
-                                <HeaderList className="text-black">
-                                    {
-                                        HeaderSet.map((headerItem, index) => {
-                                            return (
-                                                <HeaderItem key={index}>
-                                                    <HeaderLink href={headerItem.href}>
-                                                        {/* <Color
-                                                        type="text"
-                                                        color="black">
+                        <Wrapper>
+                            <Logo />
+                            <FlexCol
+                            className="mt-4"
+                            gap={6}>
+                                <Padding>
+                                    <HeaderList className="text-black">
+                                        {
+                                            HeaderSet.map((headerItem, index) => {
+                                                return (
+                                                    <HeaderItem key={index}>
+                                                        <HeaderLink href={headerItem.href}>
+                                                            {/* <Color
+                                                            type="text"
+                                                            color="black">
+                                                                {headerItem.text}
+                                                            </Color> */}
                                                             {headerItem.text}
-                                                        </Color> */}
-                                                        {headerItem.text}
-                                                    </HeaderLink>
-                                                </HeaderItem>
-                                            );
-                                        })
-                                    }
-                                </HeaderList>
-                            </Padding>
-                        </FlexCol>
+                                                        </HeaderLink>
+                                                    </HeaderItem>
+                                                );
+                                            })
+                                        }
+                                    </HeaderList>
+                                </Padding>
+                            </FlexCol>
+                        </Wrapper>
                         <p className="text-black text-center text-sm">
                             Všechna práva Vyhrazena, 2026 AD Podlahy | Adam Šimara.
                         </p>
