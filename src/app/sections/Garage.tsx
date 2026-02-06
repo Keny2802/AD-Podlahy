@@ -21,11 +21,11 @@ const Garage = () => {
             <Color
             type="bg"
             color="#270c86">
-                <Padding>
+                <Padding className="text-white">
                     <Heading className="text-center">
                         Doprava a čerpání betonu
                     </Heading>
-                    <Grid className="w-full lg:w-10/12 text-white mt-4 md:mt-6 lg:mt-6 mx-auto">
+                    <Grid className="w-full lg:w-10/12 mt-4 md:mt-6 lg:mt-6 mx-auto">
                         {
                             GarageSet.map((card, index) => {
                                 return (
