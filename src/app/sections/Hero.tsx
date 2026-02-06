@@ -25,13 +25,15 @@ const Hero = () => {
                 />
                 <Wrapper className="absolute inset-0 bg-black/30"></Wrapper>
                 <Padding>
-                    <OverlayWrapper>
-                    <HeroHeading className="uppercase">
-                        Komplexní služby, vše kolem betonu
-                    </HeroHeading>
-                    <HeroSubheading>
-                        Specializujeme se na dovoz a čerpání betonových směsí včetně realizace litých podlah.
-                    </HeroSubheading>
+                    <OverlayWrapper className="justify-center">
+                    <Padding>
+                        <HeroHeading className="uppercase">
+                            Komplexní služby, vše kolem betonu
+                        </HeroHeading>
+                        <HeroSubheading>
+                            Specializujeme se na dovoz a čerpání betonových směsí včetně realizace litých podlah.
+                        </HeroSubheading>
+                    </Padding>
                     <Wrapper className="w-11/12 md:w-max flex justify-center items-center flex-col md:flex-row gap-2 md:gap-3 lg:gap-4">
                         <Cta
                         color="bg-[#c72026]"
