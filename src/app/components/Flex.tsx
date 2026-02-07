@@ -6,7 +6,7 @@ import clsx from "clsx";
 
 import Wrapper from "./Wrapper";
 
-type FlexColType = {
+type FlexType = {
     className?: string;
     justify?: "justify-center" | "justify-between" | "justify-evenly";
     items?: "items-center" | "items-start";
@@ -14,7 +14,7 @@ type FlexColType = {
     children: ReactNode;
 };
 
-const FlexCol = ({ ...props }: FlexColType) => {
+const Flex = ({ ...props }: FlexType) => {
     const {
         className,
         justify,
@@ -41,11 +41,11 @@ const FlexCol = ({ ...props }: FlexColType) => {
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, justify && justify, items && items, `flex flex-col`)}>
+            <Wrapper className={clsx(className, justify && justify, items && items,  `flex md:flex-row flex-col`)}>
                 {children}
             </Wrapper>
         </Fragment>
     );
 };
 
-export default FlexCol;
+export default Flex;

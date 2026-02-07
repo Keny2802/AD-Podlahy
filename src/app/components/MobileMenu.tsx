@@ -22,6 +22,8 @@ type MobileMenuType = {
 };
 
 const MobileMenu = ({ ...props }: MobileMenuType) => {
+    const year = new Date().getFullYear();
+
     const {
         className,
         isMobileMenuClicked
@@ -62,7 +64,7 @@ const MobileMenu = ({ ...props }: MobileMenuType) => {
                             </FlexCol>
                         </Wrapper>
                         <p className="text-black text-center text-sm">
-                            Všechna práva Vyhrazena, 2026 AD Podlahy | Adam Šimara.
+                            Všechna práva Vyhrazena, {year} AD Podlahy | Adam Šimara.
                         </p>
                     </Padding>
                 </Wrapper>

@@ -20,7 +20,8 @@ const Garage = () => {
         <Fragment>
             <Color
             type="bg"
-            color="#270c86">
+            color="#270c86"
+            id="vozovy-park">
                 <Padding className="text-white">
                     <Heading className="text-center">
                         Doprava a čerpání betonu

@@ -5,6 +5,9 @@ import {
 import Header from "./components/Header";
 import Hero from "./sections/Hero";
 import Garage from "./sections/Garage";
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
 
 const Home = () => {
     return (
@@ -12,6 +15,9 @@ const Home = () => {
           <Header />
           <Hero />
           <Garage />
+          <About />
+          <Contact />
+          <Footer />
       </Fragment>
     );
 };

@@ -8,6 +8,7 @@ import Wrapper from "./Wrapper";
 
 type ColorType = {
     className?: string;
+    id?: string;
     type: "text" | "bg";
     color: string;
     children?: ReactNode;
@@ -16,6 +17,7 @@ type ColorType = {
 const Color = ({ ...props }: ColorType) => {
     const {
         className,
+        id,
         type,
         color,
         children
@@ -23,7 +25,9 @@ const Color = ({ ...props }: ColorType) => {
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, `${type === "text" ? `text-[${color}]` :  `bg-[${color}]`}`)}>
+            <Wrapper
+            className={clsx(className, `${type === "text" ? `text-[${color}]` :  `bg-[${color}]`}`)}
+            id={id}>
                 {children}
             </Wrapper>
         </Fragment>
