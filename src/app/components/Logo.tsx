@@ -38,7 +38,7 @@ const Logo = ({ ...props }: LogoType) => {
                 { width: 200, height: 200 }
                 : { width: width, height: height }
                 }
-                src="/fota/logo/logo.png"
+                src="/fota/logo/logo-bez-pozadi.avif"
                 alt="Logo AD Podlahy"
                 loading="eager"
                 className={clsx(className, "logo-component")}
