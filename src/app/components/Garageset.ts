@@ -35,7 +35,7 @@ export const GarageSet = [
         cta: "Domíchávač 9m3 pás 14m"
     },
     {
-        img: "/fota/sekce/vozovy-park/vozovy-park-8.avif",
+        img: "/fota/sekce/vozovy-park/vozovy-park-8-1.avif",
         href: "/vozovy-park/domychavac-9m3-pas-14m-2",
         cta: "Domíchávač 9m3 pás 14m"
     },

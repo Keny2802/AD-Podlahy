@@ -41,7 +41,7 @@ const Flex = ({ ...props }: FlexType) => {
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, justify && justify, items && items,  `flex md:flex-row flex-col`)}>
+            <Wrapper className={clsx(className, justify && justify, items && items,  `flex md:flex-row flex-col flex-component`)}>
                 {children}
             </Wrapper>
         </Fragment>

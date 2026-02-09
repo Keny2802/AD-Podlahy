@@ -1,15 +1,17 @@
 import {
     ReactNode,
-    Fragment,
+    Fragment
 } from "react";
 import clsx from "clsx";
 
-type HeadingType = {
+import Wrapper from "./Wrapper";
+
+type MarginTopType = {
     className?: string;
     children: ReactNode;
 };
 
-const Heading = ({ ...props } : HeadingType) => {
+const MarginTop = ({ ...props }: MarginTopType) => {
     const {
         className,
         children
@@ -17,11 +19,11 @@ const Heading = ({ ...props } : HeadingType) => {
 
     return (
         <Fragment>
-            <h2 className={clsx(className, "text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase tracking-relaxed")}>
+            <Wrapper className={clsx(className, "mt-2 md:mt-3 lg:mt-4 margin-top-component")}>
                 {children}
-            </h2>
+            </Wrapper>
         </Fragment>
     );
 };
 
-export default Heading;
+export default MarginTop;

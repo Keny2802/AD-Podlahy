@@ -38,7 +38,8 @@ export const metadata: Metadata = {
     url: "https://www.adpodlahy.cz/",
     images: [
       {
-        url: "https://www.adpodlahy.cz//fota/galerie/foto-galerie-1.avif",
+        // url: "https://www.adpodlahy.cz/fota/galerie/foto-galerie-1.avif",
+        url: "/fota/galerie/foto-galerie-1.avif",
         type: "image/avif",
         width: 1200,
         height: 630,
