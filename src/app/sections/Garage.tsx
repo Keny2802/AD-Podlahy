@@ -26,12 +26,12 @@ const Garage = () => {
                     <Heading className="text-center">
                         Doprava a čerpání betonu
                     </Heading>
-                    <Grid className="w-full lg:w-10/12 mt-4 md:mt-6 lg:mt-6 mx-auto">
+                    <Grid className="w-full mt-4 md:mt-6 lg:mt-6 mx-auto">
                         {
                             GarageSet.map((card, index) => {
                                 return (
                                     <Fragment key={index}>
-                                        <Wrapper className="flex justify-center">
+                                        <Wrapper className="flex justify-center mx-auto">
                                             <RelativeOverlayWrapper>
                                                 <Img
                                                 width={300}
