@@ -31,7 +31,7 @@ const Content = () => {
                     </BodyText>
                 </FlexCol>
                 <MarginTop>
-                    <Grid>
+                    <Grid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                         {
                             [
                                 "/fota/podstranky/zemni-prace/zemni-prace-1.avif",
@@ -52,7 +52,7 @@ const Content = () => {
                                     height={500}
                                     src={image}
                                     alt={`${index + 1}. Ukázka z realizace zemních prací společnosti AD podlahy.`}
-                                    className="w-full rounded-2xl object-cover cursor-pointer"
+                                    className="w-full min-h-[300px] max-h-[300px] rounded-2xl object-cover cursor-pointer"
                                     />
                                 );
                             })

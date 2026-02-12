@@ -54,11 +54,11 @@ const Header = ({ ...props }: HeaderType) => {
     return (
         <Fragment>
             {/* fixed top-0 left-0 ${isScrolling && "bg-white shadow-md"} */}
-            <Wrapper className={clsx(className, `bg-white shadow-md w-full z-50 header-component`)}>
+            <Wrapper className={clsx(className, `bg-white shadow-md border-b border-gray-200 w-full z-50 header-component`)}>
                 <Padding>
                     <Wrapper className="flex justify-between items-center gap-2 md:gap-3 lg:gap-4">
                         <Logo/>
-                        <ul className="hidden md:flex justify-between items-center gap-2 md:gap-3 lg:gap-4">
+                        <ul className="header-list hidden md:flex justify-between items-center gap-2 md:gap-3 lg:gap-4">
                             {
                                 HeaderSet.map((headerItem, index) => {
                                     return (
@@ -79,7 +79,7 @@ const Header = ({ ...props }: HeaderType) => {
                                 <Minus
                                 aria-label="Zavřít menu"
                                 role="button"
-                                className={clsx("text-black inline-block md:hidden cursor-pointer")}
+                                className={clsx("text-black inline-block md:hidden cursor-pointer mobile-icon")}
                                 onClick={() => {
                                     setMobileMenuClicked(false);
                                 }}/>
@@ -87,7 +87,7 @@ const Header = ({ ...props }: HeaderType) => {
                                 <Menu
                                 aria-label="Otevřít menu"
                                 role="button"
-                                className={clsx("text-black inline-block md:hidden cursor-pointer")}
+                                className={clsx("text-black inline-block md:hidden cursor-pointer mobile-icon")}
                                 onClick={() => {
                                     setMobileMenuClicked(prev => !prev);
                                 }}/>

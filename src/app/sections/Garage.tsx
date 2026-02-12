@@ -23,39 +23,41 @@ const Garage = () => {
             color="#270c86"
             id="vozovy-park">
                 <Padding className="text-white">
-                    <Heading className="text-center">
-                        Doprava a čerpání betonu
-                    </Heading>
-                    <Grid className="w-full mt-4 md:mt-6 lg:mt-6 mx-auto">
-                        {
-                            GarageSet.map((card, index) => {
-                                return (
-                                    <Fragment key={index}>
-                                        <Wrapper className="flex justify-center mx-auto">
-                                            <RelativeOverlayWrapper>
-                                                <Img
-                                                width={300}
-                                                height={300}
-                                                src={card.img}
-                                                alt={card.cta}
-                                                className="w-full md:w-[300px] md:h-[300px] object-cover rounded-md"
-                                                />
-                                                <OverlayWrapper
-                                                position="inset-x-0 bottom-4 flex justify-center"
-                                                className="px-3">
-                                                    <Cta
-                                                    href={card.href}
-                                                    color="bg-[#270c86]">
-                                                        {card.cta}
-                                                    </Cta>
-                                                </OverlayWrapper>
-                                            </RelativeOverlayWrapper>
-                                        </Wrapper>
-                                    </Fragment>
-                                );
-                            })
-                        }
-                    </Grid>
+                    <Padding>
+                        <Heading className="text-center">
+                            Doprava a čerpání betonu
+                        </Heading>
+                        <Grid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full mt-4 md:mt-6 lg:mt-12 mx-auto">
+                            {
+                                GarageSet.map((card, index) => {
+                                    return (
+                                        <Fragment key={index}>
+                                            <Wrapper className="flex justify-center mx-auto">
+                                                <RelativeOverlayWrapper>
+                                                    <Img
+                                                    width={300}
+                                                    height={300}
+                                                    src={card.img}
+                                                    alt={card.cta}
+                                                    className="w-full h-auto md:w-[300px] md:h-[300px] object-cover rounded-md"
+                                                    />
+                                                    <OverlayWrapper
+                                                    position="inset-x-0 bottom-4 flex justify-center"
+                                                    className="px-3">
+                                                        <Cta
+                                                        href={card.href}
+                                                        color="bg-[#270c86]">
+                                                            {card.cta}
+                                                        </Cta>
+                                                    </OverlayWrapper>
+                                                </RelativeOverlayWrapper>
+                                            </Wrapper>
+                                        </Fragment>
+                                    );
+                                })
+                            }
+                        </Grid>
+                    </Padding>
                 </Padding>
             </Color>
         </Fragment>

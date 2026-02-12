@@ -34,7 +34,7 @@ const MobileMenu = ({ ...props }: MobileMenuType) => {
             <Color
             type="bg"
             color="white">
-                <Wrapper className={clsx(className, isMobileMenuClicked ? "translate-x-0 lg:-translate-x-full" : "-translate-x-full", "bg-white shadow-md fixed inset-0 z-50 w-[320px] h-full transition-transform duration-300 ease-in-out")}>
+                <Wrapper className={clsx(className, isMobileMenuClicked ? "translate-x-0 md:-translate-x-full" : "-translate-x-full", "bg-white shadow-md fixed inset-0 z-50 w-[320px] h-full transition-transform duration-300 ease-in-out")}>
                     <Padding className="h-screen flex justify-between flex-col">
                         <Wrapper>
                             <Logo />

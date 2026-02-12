@@ -4,14 +4,12 @@ import {
 } from "react";
 import clsx from "clsx";
 
-import Wrapper from "./Wrapper";
-
-type GridType = {
+type ListItemType = {
     className?: string;
     children: ReactNode;
 };
 
-const Grid = ({ ...props }: GridType) => {
+const ListItem = ({ ...props }: ListItemType) => {
     const {
         className,
         children
@@ -19,11 +17,11 @@ const Grid = ({ ...props }: GridType) => {
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, `grid gap-2 md:gap-3 lg:gap-4`)}>
+            <li className={clsx(className, "list-disc list-item-component")}>
                 {children}
-            </Wrapper>
+            </li>
         </Fragment>
     );
 };
 
-export default Grid;
+export default ListItem;

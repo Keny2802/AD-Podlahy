@@ -19,7 +19,7 @@ const Padding = ({ ...props }: PaddingType) => {
 
     return (
         <Fragment>
-            <Wrapper className={clsx(className, "p-2 md:p-3 lg:p-4 padding-component")}>
+            <Wrapper className={clsx(className, String(className).includes("p-") ? className : "p-6 md:p-8 lg:p-12", "padding-component")}>
                 {children}
             </Wrapper>
         </Fragment>

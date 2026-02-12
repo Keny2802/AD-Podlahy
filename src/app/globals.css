@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* @media (min-width: 770px) {
+    .header-list {
+      display: none
+    }
+}
+
+@media (min-width: 1000px) {
+    .mobile-icon {
+      display: none;
+    }
+} */

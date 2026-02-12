@@ -81,22 +81,20 @@ const Contact = () => {
                                                         type="bg"
                                                         color="#270c86"
                                                         className="w-full rounded-md">
-                                                            <Padding>
-                                                                {
-                                                                    input.inputType !== "text-area" ? (
-                                                                        <input
-                                                                        type={input.inputType}
-                                                                        placeholder={input.inputPlaceholder}
-                                                                        className="w-full text-white rounded-md focus:outline-none placeholder:text-white"
-                                                                        />
-                                                                    ) : (
-                                                                        <textarea
-                                                                        placeholder={input.inputPlaceholder}
-                                                                        className="w-full min-h-[100px] resize-none text-white rounded-md focus:outline-none placeholder:text-white"
-                                                                        />
-                                                                    )
-                                                                }
-                                                            </Padding>
+                                                            {
+                                                                input.inputType !== "text-area" ? (
+                                                                    <input
+                                                                    type={input.inputType}
+                                                                    placeholder={input.inputPlaceholder}
+                                                                    className="p-3 md:p-4 lg:p-6 w-full text-white rounded-md focus:outline-none placeholder:text-white"
+                                                                    />
+                                                                ) : (
+                                                                    <textarea
+                                                                    placeholder={input.inputPlaceholder}
+                                                                    className="p-3 md:p-4 lg:p-6 w-full min-h-[100px] resize-none text-white rounded-md focus:outline-none placeholder:text-white"
+                                                                    />
+                                                                )
+                                                            }
                                                         </Color>
                                                     </Fragment>
                                                 );
