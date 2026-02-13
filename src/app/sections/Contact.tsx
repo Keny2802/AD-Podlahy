@@ -17,8 +17,6 @@ import Flex from "../components/Flex";
 import Button from "../components/Button";
 import Logo from "../components/Logo";
 import HeaderLink from "../components/HeaderLink";
-import Img from "../components/Img";
-import Cta from "../components/Cta";
 
 const Contact = () => {
     return (
@@ -36,7 +34,7 @@ const Contact = () => {
                             Spojte se s námi prostřednictvím emailu nebo telefonické komunikace.
                         </BodyText>
                     </FlexCol>
-                    <Flex className="mt-4 md:mt-5 lg:mt-6 justify-center gap-4 md:gap-5 lg:gap-6">
+                    <Flex className="mt-4 md:mt-5 lg:mt-6 justify-center flex-col gap-4 md:gap-5 lg:gap-6">
                         <Color
                         type="text"
                         color="black"

@@ -20,7 +20,7 @@ const About = () => {
             id="o-nas">
                 <Padding className="text-white">
                     <Padding>
-                        <Flex className="justify-center items-center gap-4 md:gap-5 lg:gap-6">
+                        <Flex className="justify-center items-center flex-col-reverse gap-4 md:gap-5 lg:gap-6">
                             <FlexCol className="items-start gap-2 md:gap-3 lg:gap-4">
                                 <Heading className="text-center">
                                     AD podlahy

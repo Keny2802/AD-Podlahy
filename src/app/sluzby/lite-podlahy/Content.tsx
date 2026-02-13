@@ -34,7 +34,7 @@ const Content = () => {
                     </BodyText>
                 </FlexCol>
                 <MarginTop className="lg:mt-16">
-                    <Flex className="justify-center gap-2 md:gap-4 lg:gap-6">
+                    <Flex className="justify-center flex-col gap-2 md:gap-4 lg:gap-6">
                         <Img
                         width={300}
                         height={300}
@@ -62,7 +62,7 @@ const Content = () => {
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
-                    <Flex className="justify-evenly gap-2 md:gap-4 lg:gap-6">
+                    <Flex className="justify-evenly flex-col-reverse gap-2 md:gap-4 lg:gap-6">
                         <Wrapper>
                             <SmallerHeading>
                                 Výhody
@@ -109,7 +109,7 @@ const Content = () => {
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
-                    <Flex className="justify-evenly gap-2 md:gap-4 lg:gap-6">
+                    <Flex className="justify-evenly flex-col gap-2 md:gap-4 lg:gap-6">
                         <Img
                         width={400}
                         height={400}
