@@ -2,6 +2,7 @@ import {
     Fragment
 } from "react";
 
+import ContactHeader from "@/app/components/ContactHeader";
 import Header from "@/app/components/Header";
 import Section from "@/app/components/Section";
 import FlexCol from "@/app/components/FlexCol";
@@ -21,6 +22,7 @@ import Footer from "@/app/sections/Footer";
 const Content = () => {
     return (
         <Fragment>
+            <ContactHeader />
             <Header />
             <Section color="secondary">
                 <FlexCol className="text-center items-center gap-2 md:gap-2.5 lg:gap-3">
@@ -36,8 +38,8 @@ const Content = () => {
                         <Img
                         width={300}
                         height={300}
-                        src="/fota/podstranky/lite-podlahy/lite-podlahy-0.jpg"
-                        alt="Epoxidová podlaha s červenou mřížkou v interiéru - realizace společností AD Podlady"
+                        src="/fota/podstranky/lite-podlahy/lite-podlahy-1.jpeg"
+                        alt="Modré stacionární čerpadlo na realizace litých podlah společnosti AD Podlady"
                         className="w-full md:min-w-[300px] md:max-w-[500px] object-cover rounded-md"
                         />
                         <FlexCol className="max-w-3xl gap-2 md:gap-3 lg:gap-4">
@@ -98,11 +100,11 @@ const Content = () => {
                             </MarginTop>
                         </Wrapper>
                         <Img
-                        width={300}
-                        height={300}
-                        src="/fota/podstranky/lite-podlahy/lite-podlahy-01.jpg"
-                        alt="Litá podlaha - ukázka realizace společností AD Podlady"
-                        className="w-full md:min-w-[200px] md:max-w-[800px] md:max-h-[500px] object-cover rounded-md"
+                        width={600}
+                        height={600}
+                        src="/fota/podstranky/lite-podlahy/lite-podlahy-2.jpeg"
+                        alt="Oranžové čerpadlo na lité podlahy společnosti AD Podlady"
+                        className="w-full md:min-w-[300px] md:max-w-[600px] md:max-h-[600px] object-cover rounded-md"
                         />
                     </Flex>
                 </MarginTop>

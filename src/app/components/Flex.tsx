@@ -23,25 +23,9 @@ const Flex = ({ ...props }: FlexType) => {
         children
     } = props;
 
-    // const gapClassName = {
-    //     2: "gap-2",
-    //     2.5: "gap-2.5",
-    //     3: "gap-3",
-    //     3.5: "gap-3.5",
-    //     4: "gap-4",
-    //     4.5: "gap-4.5",
-    //     5: "gap-5",
-    //     5.5: "gap-5.5",
-    //     6: "gap-6",
-    //     6.5: "gap-6.5",
-    //     7: "gap-7",
-    //     7.5: "gap-7.5",
-    //     8: "gap-8"
-    // }[gap] as string;
-
     return (
         <Fragment>
-            <Wrapper className={clsx(className, justify && justify, items && items,  `flex md:flex-row flex-col flex-component`)}>
+            <Wrapper className={clsx(className, justify && justify, items && items,  `flex md:flex-row flex-component`)}>
                 {children}
             </Wrapper>
         </Fragment>

@@ -58,7 +58,7 @@ const Header = ({ ...props }: HeaderType) => {
                 <Padding>
                     <Wrapper className="flex justify-between items-center gap-2 md:gap-3 lg:gap-4">
                         <Logo/>
-                        <ul className="header-list hidden md:flex justify-between items-center gap-2 md:gap-3 lg:gap-4">
+                        <ul className="header-list hidden md:flex justify-between items-center flex-wrap gap-2 md:gap-3 lg:gap-4">
                             {
                                 HeaderSet.map((headerItem, index) => {
                                     return (

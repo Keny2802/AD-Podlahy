@@ -19,8 +19,8 @@ export const HeaderSet = [
         href: "/sluzby/zemni-prace",
         text: "Zemní práce",
     },
-    {
-        href: "/sluzby/odtah-vozidel",
-        text: "Odtah vozidel",
-    },
+    // {
+    //     href: "/sluzby/odtah-vozidel",
+    //     text: "Odtah vozidel",
+    // },
 ];
