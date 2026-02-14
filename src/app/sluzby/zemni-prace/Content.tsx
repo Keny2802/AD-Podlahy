@@ -10,6 +10,7 @@ import Heading from "@/app/components/Heading";
 import BodyText from "@/app/components/BodyText";
 import MarginTop from "@/app/components/MarginTop";
 import Grid from "@/app/components/Grid";
+import YAnimation from "@/app/components/YAnimation";
 import Img from "@/app/components/Img";
 import About from "@/app/sections/About";
 import Contact from "@/app/sections/Contact";
@@ -39,14 +40,17 @@ const Content = () => {
                                 "/fota/podstranky/zemni-prace/zemni-prace-3.jpeg",
                             ].map((image, index) => {
                                 return (
-                                    <Img
+                                    <YAnimation
                                     key={index}
-                                    width={500}
-                                    height={500}
-                                    src={image}
-                                    alt={`${index + 1}. Ukázka z realizace zemních prací společnosti AD podlahy.`}
-                                    className="w-full min-h-[300px] max-h-[300px] rounded-2xl object-cover cursor-pointer"
-                                    />
+                                    className="w-full min-h-[300px] max-h-[300px] cursor-pointer">
+                                        <Img
+                                        width={500}
+                                        height={500}
+                                        src={image}
+                                        alt={`${index + 1}. Ukázka z realizace zemních prací společnosti AD podlahy.`}
+                                        className="w-full min-h-[300px] max-h-[300px] rounded-2xl object-cover cursor-pointer"
+                                        />
+                                    </YAnimation>
                                 );
                             })
                         }

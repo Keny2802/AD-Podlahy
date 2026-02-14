@@ -24,7 +24,8 @@ const Contact = () => {
             <Color
             type="bg"
             color="#270c86"
-            id="kontakt">
+            id="kontakt"
+            className="border-t border-white/25">
                 <Padding className="text-white">
                     <FlexCol className="items-center gap-2 md:gap-3 lg:gap-4">
                         <Heading>
@@ -34,11 +35,11 @@ const Contact = () => {
                             Spojte se s námi prostřednictvím emailu nebo telefonické komunikace.
                         </BodyText>
                     </FlexCol>
-                    <Flex className="mt-4 md:mt-5 lg:mt-6 justify-center flex-col gap-4 md:gap-5 lg:gap-6">
+                    <Flex className="mt-4 md:mt-5 lg:mt-6 justify-center flex-col xl:flex-row gap-4 md:gap-5 xl:gap-6">
                         <Color
                         type="text"
                         color="black"
-                        className="bg-white text-black rounded-md">
+                        className="bg-white text-black w-full xl:max-w-[600px] rounded-md">
                             <Padding>
                                 <FlexCol className="items-center gap-2 md:gap-2.5 lg:gap-3">
                                     <SmallerHeading>
@@ -84,12 +85,12 @@ const Contact = () => {
                                                                     <input
                                                                     type={input.inputType}
                                                                     placeholder={input.inputPlaceholder}
-                                                                    className="p-3 md:p-4 lg:p-6 w-full text-white rounded-md focus:outline-none placeholder:text-white"
+                                                                    className="p-3 md:p-4 xl:p-5 w-full text-white rounded-md focus:outline-none placeholder:text-white"
                                                                     />
                                                                 ) : (
                                                                     <textarea
                                                                     placeholder={input.inputPlaceholder}
-                                                                    className="p-3 md:p-4 lg:p-6 w-full min-h-[100px] resize-none text-white rounded-md focus:outline-none placeholder:text-white"
+                                                                    className="p-3 md:p-4 xl:p-5 w-full min-h-[100px] resize-none text-white rounded-md focus:outline-none placeholder:text-white"
                                                                     />
                                                                 )
                                                             }
@@ -109,13 +110,12 @@ const Contact = () => {
                         <FlexCol className="gap-2 md:gap-3 lg:gap-4">
                             <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.333632871508!2d17.977493775962284!3d49.34583356628087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47138354a312cb0f%3A0x786e020ec0b1b75e!2sJir%C3%A1skova%201%2F2189%2C%20755%2001%20Vset%C3%ADn%201!5e0!3m2!1scs!2scz!4v1770426292942!5m2!1scs!2scz"
-                            width="500"
-                            height="450"
                             style={{
                                 border: 0
                             }}
-                            className="w-full md:w-[500px] md:h-[450px] rounded-2xl cursor-pointer"
-                            allowFullScreen loading="lazy"
+                            className="w-full aspect-[4/3] lg:max-w-[500px] rounded-2xl cursor-pointer"
+                            allowFullScreen
+                            loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"></iframe>
                             <Color
                             type="bg"
@@ -146,7 +146,7 @@ const Contact = () => {
                                                     Jiráskova 2189, 755 01 Vsetín
                                                 </Flex>
                                             </HeaderLink>
-                                            <Flex className="justify-between flex-row gap-2 md:gap-3 lg:gap-4">
+                                            <Flex className="justify-between flex-row flex-wrap gap-2 md:gap-3 lg:gap-4">
                                                 <BodyText>
                                                     IČO 05000335
                                                 </BodyText>

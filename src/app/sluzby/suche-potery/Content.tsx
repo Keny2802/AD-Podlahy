@@ -12,6 +12,7 @@ import MarginTop from "@/app/components/MarginTop";
 import Flex from "@/app/components/Flex";
 import Wrapper from "@/app/components/Wrapper";
 import SmallerHeading from "@/app/components/SmallerHeading";
+import YAnimation from "@/app/components/YAnimation";
 import Img from "@/app/components/Img";
 import List from "@/app/components/List";
 import ListItem from "@/app/components/ListItem";
@@ -36,13 +37,15 @@ const Content = () => {
                 </FlexCol>
                 <MarginTop className="lg:mt-16">
                     <Flex className="justify-evenly flex-col gap-2 md:gap-4 lg:gap-6">
-                        <Img
-                        width={250}
-                        height={250}
-                        src="/fota/podstranky/suche-potery/suche-potery-3.avif"
-                        alt="Betonový suchý potěr připravený pro litou podlahu"
-                        className="w-full max-h-[400px] md:max-w-[250px] md:max-h-[250px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full max-h-[400px] md:max-w-[250px] md:max-h-[250px] cursor-pointer">
+                            <Img
+                            width={250}
+                            height={250}
+                            src="/fota/podstranky/suche-potery/suche-potery-3.avif"
+                            alt="Betonový suchý potěr připravený pro litou podlahu"
+                            className="w-full max-h-[400px] md:max-w-[250px] md:max-h-[250px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                         <FlexCol className="max-w-xl gap-2 md:gap-3 lg:gap-4">
                             {
                                 [
@@ -60,7 +63,7 @@ const Content = () => {
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
-                    <Flex className="justify-center flex-col-reverse gap-2 md:gap-4 lg:gap-6">
+                    <Flex className="justify-between flex-col-reverse gap-2 md:gap-4 lg:gap-6">
                         <Wrapper>
                             <SmallerHeading>
                                 Proč zvolit suchý betonový potěr?
@@ -90,24 +93,28 @@ const Content = () => {
                                 </List>
                             </MarginTop>
                         </Wrapper>
-                        <Img
-                        width={450}
-                        height={450}
-                        src="/fota/podstranky/suche-potery/suche-potery-1.avif"
-                        alt="Příprava suchého potěru - realizováno společností AD Podlady"
-                        className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] cursor-pointer">
+                            <Img
+                            width={450}
+                            height={450}
+                            src="/fota/podstranky/suche-potery/suche-potery-1.avif"
+                            alt="Příprava suchého potěru - realizováno společností AD Podlady"
+                            className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
                     <Flex className="justify-evenly flex-col gap-2 md:gap-4 lg:gap-6">
-                        <Img
-                        width={300}
-                        height={300}
-                        src="/fota/podstranky/suche-potery/suche-potery-2.avif"
-                        alt="Hotový suchý potěr - realizace společností AD Podlady"
-                        className="w-full max-h-[250px] md:max-w-[200px] md:max-h-[200px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full max-h-[250px] md:max-w-[200px] md:max-h-[200px] cursor-pointer">
+                            <Img
+                            width={300}
+                            height={300}
+                            src="/fota/podstranky/suche-potery/suche-potery-2.avif"
+                            alt="Hotový suchý potěr - realizace společností AD Podlady"
+                            className="w-full max-h-[250px] md:max-w-[200px] md:max-h-[200px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                         <Wrapper>
                             <SmallerHeading>
                                 Co jsou suché betonové potěry
@@ -148,24 +155,28 @@ const Content = () => {
                                 </List>
                             </MarginTop>
                         </Wrapper>
-                        <Img
-                        width={350}
-                        height={350}
-                        src="/fota/podstranky/suche-potery/suche-potery-5.avif"
-                        alt="Hotový suchý potěr pomocí hladičky betonu - realizace společností AD Podlady"
-                        className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] cursor-pointer">
+                            <Img
+                            width={350}
+                            height={350}
+                            src="/fota/podstranky/suche-potery/suche-potery-5.avif"
+                            alt="Hotový suchý potěr pomocí hladičky betonu - realizace společností AD Podlady"
+                            className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
                     <Flex className="justify-center flex-col gap-2 md:gap-4 lg:gap-6">
-                        <Img
-                        width={350}
-                        height={350}
-                        src="/fota/podstranky/suche-potery/suche-potery-6.avif"
-                        alt="Nehotový suchý potěr - realizace společností AD Podlady"
-                        className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] cursor-pointer">
+                            <Img
+                            width={350}
+                            height={350}
+                            src="/fota/podstranky/suche-potery/suche-potery-6.avif"
+                            alt="Nehotový suchý potěr - realizace společností AD Podlady"
+                            className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                         <Wrapper>
                             <SmallerHeading>
                                 Výhody oproti klasickým potěrům

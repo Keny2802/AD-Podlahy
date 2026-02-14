@@ -9,6 +9,7 @@ import OverlayWrapper from "../components/OverlayWrapper";
 import Padding from "../components/Padding";
 import HeroHeading from "../components/HeroHeading";
 import HeroSubheading from "../components/HeroSubheading";
+import YAnimation from "../components/YAnimation";
 import Cta from "../components/Cta";
 
 const Hero = () => {
@@ -34,17 +35,21 @@ const Hero = () => {
                             Specializujeme se na dovoz a čerpání betonových směsí včetně realizace litých podlah.
                         </HeroSubheading>
                     </Padding>
-                    <Wrapper className="w-11/12 md:w-max flex justify-center items-center flex-col md:flex-row gap-2 md:gap-3 lg:gap-4">
-                        <Cta
-                        color="bg-[#c72026]"
-                        href="#o-nas">
-                            Historie firmy
-                        </Cta>
-                        <Cta
-                        color="bg-[#270c86]"
-                        href="#kontakt">
-                            Domluvit konzultaci
-                        </Cta>
+                    <Wrapper className="w-full md:w-max flex justify-center items-center flex-col md:flex-row gap-2 md:gap-3 lg:gap-4">
+                        <YAnimation className="w-full mb-4 md:mb-0">
+                            <Cta
+                            color="bg-[#c72026]"
+                            href="#o-nas">
+                                Historie firmy
+                            </Cta>
+                        </YAnimation>
+                        <YAnimation className="whitespace-nowrap">
+                            <Cta
+                            color="bg-[#270c86]"
+                            href="#kontakt">
+                                Domluvit konzultaci
+                            </Cta>
+                        </YAnimation>
                     </Wrapper>
                 </OverlayWrapper>
                 </Padding>

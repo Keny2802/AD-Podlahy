@@ -12,6 +12,7 @@ import MarginTop from "@/app/components/MarginTop";
 import Flex from "@/app/components/Flex";
 import Wrapper from "@/app/components/Wrapper";
 import SmallerHeading from "@/app/components/SmallerHeading";
+import YAnimation from "@/app/components/YAnimation";
 import Img from "@/app/components/Img";
 import List from "@/app/components/List";
 import ListItem from "@/app/components/ListItem";
@@ -62,24 +63,28 @@ const Content = () => {
                                 </List>
                             </MarginTop>
                         </Wrapper>
-                        <Img
-                        width={450}
-                        height={450}
-                        src="/fota/podstranky/zakladove-desky/zakladove-desky-1.jpeg"
-                        alt="Hotová základová deska pro rodinný dům - realizováno společností AD Podlady"
-                        className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] cursor-pointer">
+                            <Img
+                            width={450}
+                            height={450}
+                            src="/fota/podstranky/zakladove-desky/zakladove-desky-1.jpeg"
+                            alt="Hotová základová deska pro rodinný dům - realizováno společností AD Podlady"
+                            className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
                     <Flex className="justify-evenly flex-col gap-2 md:gap-4 lg:gap-6">
-                        <Img
-                        width={450}
-                        height={450}
-                        src="/fota/podstranky/zakladove-desky/zakladove-desky-2.jpeg"
-                        alt="Vykopávání zakladové desky pomocí bagru - realizace společností AD Podlady"
-                        className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] cursor-pointer">
+                            <Img
+                            width={450}
+                            height={450}
+                            src="/fota/podstranky/zakladove-desky/zakladove-desky-2.jpeg"
+                            alt="Vykopávání zakladové desky pomocí bagru - realizace společností AD Podlady"
+                            className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                         <Wrapper>
                             <SmallerHeading>
                                 Realizace spodní stavby: Od projektu k betonu
@@ -140,13 +145,15 @@ const Content = () => {
                                 </List>
                             </MarginTop>
                         </Wrapper>
-                        <Img
-                        width={350}
-                        height={350}
-                        src="/fota/podstranky/zakladove-desky/zakladove-desky-3.jpeg"
-                        alt="Vykopání díry pro kanaliuace k základové desce - realizace společností AD Podlady"
-                        className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] cursor-pointer">
+                            <Img
+                            width={350}
+                            height={350}
+                            src="/fota/podstranky/zakladove-desky/zakladove-desky-3.jpeg"
+                            alt="Vykopání díry pro kanaliuace k základové desce - realizace společností AD Podlady"
+                            className="w-full md:min-w-[300px] md:max-w-[350px] md:max-h-[350px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                     </Flex>
                 </MarginTop>
             </Section>

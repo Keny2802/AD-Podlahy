@@ -12,6 +12,7 @@ import MarginTop from "@/app/components/MarginTop";
 import Flex from "@/app/components/Flex";
 import Wrapper from "@/app/components/Wrapper";
 import SmallerHeading from "@/app/components/SmallerHeading";
+import YAnimation from "@/app/components/YAnimation";
 import Img from "@/app/components/Img";
 import List from "@/app/components/List";
 import ListItem from "@/app/components/ListItem";
@@ -35,14 +36,16 @@ const Content = () => {
                 </FlexCol>
                 <MarginTop className="lg:mt-16">
                     <Flex className="justify-center flex-col gap-2 md:gap-4 lg:gap-6">
-                        <Img
-                        width={300}
-                        height={300}
-                        src="/fota/podstranky/lite-podlahy/lite-podlahy-1.jpeg"
-                        alt="Modré stacionární čerpadlo na realizace litých podlah společnosti AD Podlady"
-                        className="w-full md:min-w-[300px] md:max-w-[500px] object-cover rounded-md"
-                        />
-                        <FlexCol className="max-w-3xl gap-2 md:gap-3 lg:gap-4">
+                        <YAnimation className="w-full cursor-pointer">
+                            <Img
+                            width={300}
+                            height={300}
+                            src="/fota/podstranky/lite-podlahy/lite-podlahy-1.jpeg"
+                            alt="Modré stacionární čerpadlo na realizace litých podlah společnosti AD Podlady"
+                            className="w-full md:min-w-[300px] md:max-w-[500px] object-cover rounded-md"
+                            />
+                        </YAnimation>
+                        <FlexCol className="max-w-3xl gap-2 md:gap-3 lg:gap-4 cursor-pointer">
                         {
                             [
                                 `Anhydritový podlahový potěr je tekutá směs na bázi síranu vápenatého se samonivelací určená pro vnitřní podlahy umožňující dokonalé srovnání podlahových konstrukcí a vytvářející ideálně rovnou a hladkou podlahovou plochu pro finální nášlapnou vrstvu - dlažba, plovoucí podlahy, PVC, koberce, parkety… nebo při určitých úpravách může sloužit jako finální podlaha.`,
@@ -99,24 +102,28 @@ const Content = () => {
                                 </List>
                             </MarginTop>
                         </Wrapper>
-                        <Img
-                        width={600}
-                        height={600}
-                        src="/fota/podstranky/lite-podlahy/lite-podlahy-2.jpeg"
-                        alt="Oranžové čerpadlo na lité podlahy společnosti AD Podlady"
-                        className="w-full md:min-w-[300px] md:max-w-[600px] md:max-h-[600px] object-cover rounded-md"
-                        />
+                        <YAnimation className="cursor-pointer">
+                            <Img
+                            width={600}
+                            height={600}
+                            src="/fota/podstranky/lite-podlahy/lite-podlahy-2.jpeg"
+                            alt="Oranžové čerpadlo na lité podlahy společnosti AD Podlady"
+                            className="w-full md:min-w-[300px] md:max-w-[600px] md:max-h-[600px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
                     <Flex className="justify-evenly flex-col gap-2 md:gap-4 lg:gap-6">
-                        <Img
-                        width={400}
-                        height={400}
-                        src="/fota/podstranky/lite-podlahy/lite-podlahy-02.jpg"
-                        alt="Epoxidová litá podlaha v útulném domě, realizováno společností AD Podlahy"
-                        className="w-full md:max-w-[400px] object-cover rounded-md"
-                        />
+                        <YAnimation className="cursor-pointer">
+                            <Img
+                            width={400}
+                            height={400}
+                            src="/fota/podstranky/lite-podlahy/lite-podlahy-02.jpg"
+                            alt="Epoxidová litá podlaha v útulném domě, realizováno společností AD Podlahy"
+                            className="w-full md:max-w-[400px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                         <Wrapper>
                             <SmallerHeading>
                                 Oblasti použití

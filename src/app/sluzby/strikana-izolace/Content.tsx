@@ -14,6 +14,7 @@ import Flex from "@/app/components/Flex";
 import Wrapper from "@/app/components/Wrapper";
 import List from "@/app/components/List";
 import ListItem from "@/app/components/ListItem";
+import YAnimation from "@/app/components/YAnimation";
 import Img from "@/app/components/Img";
 import About from "@/app/sections/About";
 import Contact from "@/app/sections/Contact";
@@ -64,24 +65,28 @@ const Content = () => {
                                 </List>
                             </MarginTop>
                         </Wrapper>
-                        <Img
-                        width={450}
-                        height={450}
-                        src="/fota/podstranky/strikana-izolace/strikana-izolace-1.jpeg"
-                        alt="Stříkaná izolace v halovém objektu - realizováno společností AD Podlady"
-                        className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] cursor-pointer">
+                            <Img
+                            width={450}
+                            height={450}
+                            src="/fota/podstranky/strikana-izolace/strikana-izolace-1.jpeg"
+                            alt="Stříkaná izolace v halovém objektu - realizováno společností AD Podlady"
+                            className="w-full md:min-w-[200px] md:max-w-[450px] md:max-h-[450px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                     </Flex>
                 </MarginTop>
                 <MarginTop className="lg:mt-16">
                     <Flex className="justify-center flex-col gap-2 md:gap-4 lg:gap-6">
-                        <Img
-                        width={300}
-                        height={300}
-                        src="/fota/podstranky/strikana-izolace/strikana-izolace-2.jpeg"
-                        alt="Stříkaná izolace v rodinném domě - realizováno společností AD Podlady"
-                        className="w-full md:min-w-[200px] md:max-w-[300px] md:max-h-[300px] object-cover rounded-md"
-                        />
+                        <YAnimation className="w-full md:min-w-[200px] md:max-w-[300px] md:max-h-[300px] cursor-pointer">
+                            <Img
+                            width={300}
+                            height={300}
+                            src="/fota/podstranky/strikana-izolace/strikana-izolace-2.jpeg"
+                            alt="Stříkaná izolace v rodinném domě - realizováno společností AD Podlady"
+                            className="w-full md:min-w-[200px] md:max-w-[300px] md:max-h-[300px] object-cover rounded-md"
+                            />
+                        </YAnimation>
                         <Wrapper>
                             <SmallerHeading>
                                 Stop průvanu a drahým účtům! 🏠❄️
