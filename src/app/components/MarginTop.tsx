@@ -11,6 +11,8 @@ type MarginTopType = {
     children: ReactNode;
 };
 
+type OptionalMarginTopType = Partial<MarginTopType>;
+
 const MarginTop = ({ ...props }: MarginTopType) => {
     const {
         className,
