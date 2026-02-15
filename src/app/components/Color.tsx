@@ -11,6 +11,7 @@ type ColorType = {
     id?: string;
     type: "text" | "bg";
     color: string;
+    style?: React.CSSProperties;
     children?: ReactNode;
 };
 
@@ -20,6 +21,7 @@ const Color = ({ ...props }: ColorType) => {
         id,
         type,
         color,
+        style,
         children
     } = props;
 
@@ -27,7 +29,8 @@ const Color = ({ ...props }: ColorType) => {
         <Fragment>
             <Wrapper
             className={clsx(className, `${type === "text" ? `text-[${color}]` :  `bg-[${color}]`}`)}
-            id={id}>
+            id={id}
+            style={style}>
                 {children}
             </Wrapper>
         </Fragment>

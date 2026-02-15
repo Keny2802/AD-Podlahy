@@ -7,13 +7,15 @@ import {
     Map
 } from "lucide-react";
 
-import Color from "../components/Color";
+import RelativeOverlayWrapper from "../components/RelativeOverlayWrapper";
+import Wrapper from "../components/Wrapper";
 import Padding from "../components/Padding";
 import FlexCol from "../components/FlexCol";
+import Flex from "../components/Flex";
+import Color from "../components/Color";
 import Heading from "../components/Heading";
 import SmallerHeading from "../components/SmallerHeading";
 import BodyText from "../components/BodyText";
-import Flex from "../components/Flex";
 import Button from "../components/Button";
 import Logo from "../components/Logo";
 import HeaderLink from "../components/HeaderLink";
@@ -21,12 +23,15 @@ import HeaderLink from "../components/HeaderLink";
 const Contact = () => {
     return (
         <Fragment>
-            <Color
-            type="bg"
-            color="#270c86"
-            id="kontakt"
-            className="border-t border-white/25">
-                <Padding className="text-white">
+            <RelativeOverlayWrapper
+            className="border-t border-white/25 w-full bg-[#270c86]"
+            id="kontakt">
+                <Wrapper
+                className="absolute inset-0 bg-[#c72026]"
+                style={{
+                    clipPath: "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)"
+                }}></Wrapper>
+                <Padding className="text-white relative z-10">
                     <FlexCol className="items-center gap-2 md:gap-3 lg:gap-4">
                         <Heading>
                             Máte dotaz?
@@ -161,7 +166,7 @@ const Contact = () => {
                         </FlexCol>
                     </Flex>
                 </Padding>
-            </Color>
+            </RelativeOverlayWrapper>
         </Fragment>
     );
 };

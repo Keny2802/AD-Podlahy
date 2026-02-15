@@ -2,7 +2,8 @@ import {
     Fragment
 } from "react";
 
-import Color from "../components/Color";
+import RelativeOverlayWrapper from "../components/RelativeOverlayWrapper";
+import Wrapper from "../components/Wrapper";
 import Padding from "../components/Padding";
 import Flex from "../components/Flex";
 import FlexCol from "../components/FlexCol";
@@ -15,12 +16,15 @@ import Cta from "../components/Cta";
 const About = () => {
     return (
         <Fragment>
-            <Color
-            type="bg"
-            color="#270c86"
+            <RelativeOverlayWrapper
             id="o-nas"
-            className="border-t border-white/25">
-                <Padding className="text-white">
+            className="border-t border-white/25 w-full bg-[#270c86]">
+                <Wrapper
+                className="absolute inset-0 bg-[#c72026]"
+                style={{
+                    clipPath: "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)"
+                }}></Wrapper>
+                <Padding className="text-white relative z-10">
                     <Padding>
                         <Flex className="w-full justify-center items-center flex-col-reverse lg:flex-row gap-4 md:gap-5 lg:gap-6">
                             <FlexCol className="items-start gap-2 md:gap-3 lg:gap-4">
@@ -49,7 +53,7 @@ const About = () => {
                         </Flex>
                     </Padding>
                 </Padding>
-            </Color>
+            </RelativeOverlayWrapper>
         </Fragment>
     );
 };

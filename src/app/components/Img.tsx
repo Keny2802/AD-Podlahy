@@ -12,6 +12,7 @@ type ImageType = {
     src: string;
     alt: string;
     loading?: "eager" | "lazy";
+    style?: React.CSSProperties;
 };
 
 const Img = ({ ...props }: ImageType) => {
@@ -22,7 +23,8 @@ const Img = ({ ...props }: ImageType) => {
         height,
         src,
         alt,
-        loading
+        loading,
+        style
     } = props;
 
     return (
@@ -39,6 +41,7 @@ const Img = ({ ...props }: ImageType) => {
                     { loading: loading } : { loading: "lazy" }
                 )
             }
+            style={style}
             className={clsx(className, "image-component")}
             />
         </Fragment>

@@ -5,7 +5,7 @@ import {
     GarageSet
 } from "../components/Garageset";
 
-import Color from "../components/Color";
+// import Color from "../components/Color";
 import Padding from "../components/Padding";
 import Heading from "../components/Heading";
 import Grid from "../components/Grid";
@@ -19,11 +19,15 @@ import Cta from "../components/Cta";
 const Garage = () => {
     return (
         <Fragment>
-            <Color
-            type="bg"
-            color="#270c86"
+            <RelativeOverlayWrapper
+            className="w-full bg-[#c72026]"
             id="vozovy-park">
-                <Padding className="text-white">
+                <Wrapper
+                className="absolute inset-0 bg-[#270c86]"
+                style={{
+                    clipPath: "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)"
+                }}></Wrapper>
+                <Padding className="text-white relative z-10">
                     <Padding>
                         <Heading className="text-center">
                             Doprava a čerpání betonu
@@ -62,7 +66,7 @@ const Garage = () => {
                         </Grid>
                     </Padding>
                 </Padding>
-            </Color>
+            </RelativeOverlayWrapper>
         </Fragment>
     );
 };
