@@ -35,6 +35,72 @@ const Content = () => {
                     </BodyText>
                 </FlexCol>
                 <MarginTop className="lg:mt-16">
+                    <Flex className="w-full justify-center items-center flex-col-reverse gap-2 md:gap-4 lg:gap-6">
+                        <FlexCol className="max-w-3xl gap-2 md:gap-3 lg:gap-4 cursor-pointer">
+                            {
+                                [
+                                    `AD Podlahy, stavební firma se sídle ve Vsetíně a působností po celé ČR. Zabýváme se aplikací samonivelačních anhydritových potěrů. Díky našim dlouholetým zkušenostem a velkému množství referencí pracujeme rychle se 100 % kvalitou odvedené práce.`,
+                                    `Ke každé zakázce přistupujeme individuálně s důrazem na maximální kvalitu odvedené práce!`,
+                                    `Provádíme lité, anhydritové podlahy, které jsou vynikající na zhotovení podlah v rodinných domech i v průmyslových objektech. Jedná se o směs dodávanou jak v suchém tak mokrém stavu. Obrovskou výhodou je rychlá montáž, možnost další zátěže již po druhém dnu od montáže a samonivelační vlastnosti podlahy.`
+                                ].map((textBlock, index) => {
+                                    return (
+                                        <BodyText
+                                        key={index}>
+                                            {textBlock}
+                                        </BodyText>
+                                    );
+                                })
+                            }
+                        </FlexCol>
+                        <YAnimation className="w-full cursor-pointer">
+                            <Img
+                            width={300}
+                            height={300}
+                            src="/fota/podstranky/lite-podlahy/lite-podlahy-0.jpeg"
+                            alt="Stříkání lité podlahy realizace firmy AD Podlady"
+                            className="w-full max-h-[350px] md:min-w-[300px] md:max-w-[600px] md:max-h-[450px] object-cover rounded-md"
+                            />
+                        </YAnimation>
+                    </Flex>
+                    <MarginTop>
+                        <Flex className="justify-center items-center flex-col gap-2 md:gap-4 lg:gap-6">
+                            {
+                                [
+                                    {
+                                        image: "/fota/podstranky/lite-podlahy/benefit-1.png",
+                                        title: "Jsme stavební firma se sídlem ve Vsetíně a působností po celé republice."
+                                    },
+                                    {
+                                        image: "/fota/podstranky/lite-podlahy/benefit-2.png",
+                                        title: "Díky dlouholetým zkušenostem v oboru pracujeme rychle, spolehlivě, s vysokou kvalitou provedené práce."
+                                    },
+                                    {
+                                        image: "/fota/podstranky/lite-podlahy/benefit-3.png",
+                                        title: "Naší prioritou je 100 % kvalita odvedené práce a 100 % spokojenost zákazníka."
+                                    }
+                                ].map((card, index) => {
+                                    return (
+                                        <FlexCol
+                                        key={index}
+                                        className="justify-center items-center gap-4 md:gap-6 lg:gap-8">
+                                            <Img
+                                            width={200}
+                                            height={200}
+                                            src={card.image}
+                                            alt={card.title}
+                                            className="max-w-[200px] max-h-[200px]"
+                                            />
+                                            <BodyText className="lg:max-w-sm">
+                                                {card.title}
+                                            </BodyText>
+                                        </FlexCol>
+                                    );
+                                })
+                            }
+                        </Flex>
+                    </MarginTop>
+                </MarginTop>
+                <MarginTop className="lg:mt-16">
                     <Flex className="justify-center flex-col gap-2 md:gap-4 lg:gap-6">
                         <YAnimation className="w-full cursor-pointer">
                             <Img

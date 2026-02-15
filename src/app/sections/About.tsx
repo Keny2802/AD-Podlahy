@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Fragment
 } from "react";
@@ -12,6 +14,7 @@ import BodyText from "../components/BodyText";
 import YAnimation from "../components/YAnimation";
 import Img from "../components/Img";
 import Cta from "../components/Cta";
+import HashLess from "../components/HashLess";
 
 const About = () => {
     return (
@@ -37,6 +40,7 @@ const About = () => {
                                 <Cta
                                 color="bg-white"
                                 href="#kontakt"
+                                onClick={(event) => HashLess(event, "kontakt")}
                                 className="text-center text-black">
                                     Kontaktujte nás
                                 </Cta>

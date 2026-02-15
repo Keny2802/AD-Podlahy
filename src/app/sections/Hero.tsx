@@ -1,3 +1,5 @@
+"use client";
+
 import {
     Fragment
 } from "react";
@@ -11,6 +13,7 @@ import HeroHeading from "../components/HeroHeading";
 import HeroSubheading from "../components/HeroSubheading";
 import YAnimation from "../components/YAnimation";
 import Cta from "../components/Cta";
+import HashLess from "../components/HashLess";
 
 const Hero = () => {
     return (
@@ -39,14 +42,16 @@ const Hero = () => {
                         <YAnimation className="w-full mb-4 md:mb-0">
                             <Cta
                             color="bg-[#c72026]"
-                            href="#o-nas">
+                            href="#o-nas"
+                            onClick={(event) => HashLess(event, "o-nas")}>
                                 Historie firmy
                             </Cta>
                         </YAnimation>
                         <YAnimation className="whitespace-nowrap">
                             <Cta
                             color="bg-[#270c86]"
-                            href="#kontakt">
+                            href="#kontakt"
+                            onClick={(event) => HashLess(event, "kontakt")}>
                                 Domluvit konzultaci
                             </Cta>
                         </YAnimation>

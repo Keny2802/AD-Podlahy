@@ -31,7 +31,7 @@ const Footer = () => {
                         height={300}
                         />
                         <HeaderList className="text-black">
-                            <Flex className="justify-center items-center gap-2 md:gap-3 lg:gap-4">
+                            <Flex className="lg:justify-center lg:items-center lg:flex-row flex-col gap-2 md:gap-3 lg:gap-4">
                                 {
                                     HeaderSet.map((headerItem, index) => {
                                         return (
