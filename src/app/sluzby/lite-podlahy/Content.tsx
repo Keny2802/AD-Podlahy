@@ -103,7 +103,7 @@ const Content = () => {
                             <Img
                             width={300}
                             height={300}
-                            src="/fota/podstranky/lite-podlahy/lite-podlahy-1.avif"
+                            src="/fota/podstranky/lite-podlahy/lite-podlahy-5.avif"
                             alt="Litá podlaha pokrytá epoxidem realizace společností AD podlahy"
                             className="w-full md:min-w-[300px] md:max-w-[500px] object-cover rounded-md"
                             />
@@ -216,24 +216,13 @@ const Content = () => {
                     </Flex>
                 </MarginTop>
                 <MarginTop>
-                    <Heading>
-                        Podívejte se na naše ukázky litých podlah
-                    </Heading>
                     <MarginTop>
                         <Flex className="justify-center items-center flex-wrap gap-4 md:gap-6 lg:gap-6">
                             {
                                 [
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-0.jpeg",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-0.jpg",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-01.jpg",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-1.avif",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-1.jpeg",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-02.jpg",
                                     "/fota/podstranky/lite-podlahy/lite-podlahy-2.avif",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-2.jpeg",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-3.avif",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-4.avif",
-                                    "/fota/podstranky/lite-podlahy/lite-podlahy-5.avif"
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-01.jpg",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-4.avif"
                                 ].map((image, index) => {
                                     return (
                                         <YAnimation className="w-full md:max-w-[400px] md:max-h-[400px]">
