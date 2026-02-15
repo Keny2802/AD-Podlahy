@@ -30,9 +30,6 @@ const Content = () => {
                     <Heading>
                         Lité podlahy
                     </Heading>
-                    <BodyText>
-                        Průmyslové lité podlahy s vysokou odolností.
-                    </BodyText>
                 </FlexCol>
                 <MarginTop className="lg:mt-16">
                     <Flex className="w-full justify-center items-center flex-col-reverse gap-2 md:gap-4 lg:gap-6">
@@ -106,8 +103,8 @@ const Content = () => {
                             <Img
                             width={300}
                             height={300}
-                            src="/fota/podstranky/lite-podlahy/lite-podlahy-1.jpeg"
-                            alt="Modré stacionární čerpadlo na realizace litých podlah společnosti AD Podlady"
+                            src="/fota/podstranky/lite-podlahy/lite-podlahy-1.avif"
+                            alt="Litá podlaha pokrytá epoxidem realizace společností AD podlahy"
                             className="w-full md:min-w-[300px] md:max-w-[500px] object-cover rounded-md"
                             />
                         </YAnimation>
@@ -217,6 +214,43 @@ const Content = () => {
                             </MarginTop>
                         </Wrapper>
                     </Flex>
+                </MarginTop>
+                <MarginTop>
+                    <Heading>
+                        Podívejte se na naše ukázky litých podlah
+                    </Heading>
+                    <MarginTop>
+                        <Flex className="justify-center items-center flex-wrap gap-4 md:gap-6 lg:gap-6">
+                            {
+                                [
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-0.jpeg",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-0.jpg",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-01.jpg",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-1.avif",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-1.jpeg",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-02.jpg",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-2.avif",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-2.jpeg",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-3.avif",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-4.avif",
+                                    "/fota/podstranky/lite-podlahy/lite-podlahy-5.avif"
+                                ].map((image, index) => {
+                                    return (
+                                        <YAnimation className="w-full md:max-w-[400px] md:max-h-[400px]">
+                                            <Img
+                                            key={index}
+                                            width={400}
+                                            height={400}
+                                            src={image}
+                                            alt={`${index + 1}. Ukázka realizace z fotogalerie litých podlah společnosti AD Podlahy`}
+                                            className="w-full max-h-[350px] md:max-w-[400px] md:max-h-[400px] object-cover rounded-2xl"
+                                            />
+                                        </YAnimation>
+                                    );
+                                })
+                            }
+                        </Flex>
+                    </MarginTop>
                 </MarginTop>
             </Section>
             <About />
