@@ -2,6 +2,7 @@ import type {
   Metadata
 } from "next";
 import "./globals.css";
+import ScrollProgressBar from "./components/ScrollProgressBar";
 
 export const metadata: Metadata = {
   // title: "AD Podlahy | Adam Šimara",
@@ -57,6 +58,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
+        <ScrollProgressBar />
         {children}
       </body>
     </html>

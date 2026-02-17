@@ -12,12 +12,12 @@ export const HeaderSet = [
         text: "Základové desky",
     },
     {
-        href: "/sluzby/strikana-izolace",
-        text: "Stříkaná izolace",
-    },
-    {
         href: "/sluzby/zemni-prace",
         text: "Zemní práce",
+    },
+    {
+        href: "/sluzby/strikana-izolace",
+        text: "Stříkaná izolace",
     },
     // {
     //     href: "/sluzby/odtah-vozidel",

@@ -225,14 +225,16 @@ const Content = () => {
                                     "/fota/podstranky/lite-podlahy/lite-podlahy-4.avif"
                                 ].map((image, index) => {
                                     return (
-                                        <YAnimation className="w-full md:max-w-[400px] md:max-h-[400px]">
+                                        <YAnimation
+                                        key={index}
+                                        className="w-full md:max-w-[400px] md:max-h-[400px]">
                                             <Img
                                             key={index}
                                             width={400}
                                             height={400}
                                             src={image}
                                             alt={`${index + 1}. Ukázka realizace z fotogalerie litých podlah společnosti AD Podlahy`}
-                                            className="w-full max-h-[350px] md:max-w-[400px] md:max-h-[400px] object-cover rounded-2xl"
+                                            className="w-full max-h-[350px] md:max-w-[400px] md:max-h-[400px] object-cover rounded-2xl cursor-pointer"
                                             />
                                         </YAnimation>
                                     );

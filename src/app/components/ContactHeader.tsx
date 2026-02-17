@@ -27,7 +27,7 @@ const ContactHeader = ({ ...props }: ContactHeaderType) => {
             <Wrapper className={clsx(className, "bg-white text-black shadow-md border-b border-gray-200 contact-header-component")}>
                 <Padding className="p-2.5 md:p-3 lg:p-4">
                     <HeaderList>
-                        <Flex className="gap-3 md:gap-3.5 lg:gap-4">
+                        <Flex className="lg:flex-row flex-col gap-3 md:gap-3.5 lg:gap-4">
                             {
                                 [
                                     {
