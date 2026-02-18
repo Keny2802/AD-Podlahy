@@ -26,7 +26,6 @@ type MobileMenuType = {
 
 const MobileMenu = ({ ...props }: MobileMenuType) => {
     const year = new Date().getFullYear();
-    const style = document.body.style;
 
     const {
         className,
@@ -35,6 +34,8 @@ const MobileMenu = ({ ...props }: MobileMenuType) => {
     } = props;
 
     useEffect(() => {
+        const style = document.body.style;
+        
         if (isMobileMenuClicked) {
             style.overflow = "hidden";
         } else {
