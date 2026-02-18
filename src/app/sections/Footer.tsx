@@ -5,9 +5,9 @@ import {
     HeaderSet
 } from "../components/HeaderSet";
 
-import Color from "../components/Color";
-import FlexCol from "../components/FlexCol";
+import Wrapper from "../components/Wrapper";
 import Padding from "../components/Padding";
+import FlexCol from "../components/FlexCol";
 import Logo from "../components/Logo";
 import Flex from "../components/Flex";
 import HeaderList from "../components/HeaderList";
@@ -20,10 +20,7 @@ const Footer = () => {
 
     return (
         <Fragment>
-            <Color
-            type="bg"
-            color="white"
-            className="bg-white">
+            <Wrapper className="bg-white text-black">
                 <Padding>
                     <FlexCol className="justify-center items-center gap-2 md:gap-3 lg:gap-4">
                         <Logo
@@ -55,7 +52,7 @@ const Footer = () => {
                         </FlexCol>
                     </FlexCol>
                 </Padding>
-            </Color>
+            </Wrapper>
         </Fragment>
     );
 };
