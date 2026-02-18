@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     ]
   },
   openGraph: {
-    title: "Lité betonové podlahy a čerpání betonu | AD Podlahy | Adam Šimara",
+    title: "Lití betonových podlah | AD Podlahy",
     description: "Dovoz a čerpání betonových směsí včetně realizace kvalitních litých podlah. Spolehlivě, rychle a profesionálně. AD podlahy - spolehlivé řešení pro domy i průmysl.",
     url: "https://www.adpodlahy.cz/",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         alt: "Lité betonové podlahy - AD Podlahy Adam Šimara"
       }
     ]
-  }
+  },
 };
 
 export default function RootLayout({

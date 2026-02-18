@@ -25,7 +25,7 @@ const ScrollProgressBar = () => {
                 height: 12.5,
                 originX: 0,
                 backgroundColor: "#00c853",
-                zIndex: 50
+                zIndex: 60
             }}
             id="scroll-progress-bar-indicator"></motion.div>
         </Fragment>

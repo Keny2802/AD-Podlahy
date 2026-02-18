@@ -8,6 +8,7 @@ type WrapperType = {
     className?: string;
     id?: string;
     style?: React.CSSProperties;
+    onClick?: () => void;
     children?: ReactNode;
 };
 
@@ -16,6 +17,7 @@ const Wrapper = ({ ...props }: WrapperType) => {
         className,
         id,
         style,
+        onClick,
         children
     } = props;
 
@@ -24,7 +26,8 @@ const Wrapper = ({ ...props }: WrapperType) => {
             <div
             className={clsx(className, "wrapper-component")}
             id={id}
-            style={style}>
+            style={style}
+            onClick={onClick}>
                 {children}
             </div>
         </Fragment>

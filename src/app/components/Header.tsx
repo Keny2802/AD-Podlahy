@@ -7,6 +7,11 @@ import {
     Fragment
 } from "react";
 import {
+    useScroll,
+    useMotionValueEvent,
+    motion
+} from "motion/react";
+import {
     HeaderSet
 } from "./HeaderSet";
 import {
@@ -27,13 +32,32 @@ type HeaderType = {
 };
 
 const Header = ({ ...props }: HeaderType) => {
-    const [isMobileMenuClicked, setMobileMenuClicked] = useState<boolean>(false);
-    const [isScrolling, setIsScrolling] = useState<boolean>(false);
-
     const {
         className,
         children
     } = props;
+
+    const [isHidden, setToHidden] = useState<boolean>(false);
+    const {
+        scrollY
+    } = useScroll();
+    const animate = {
+        y: isHidden ? -140 : 0,
+        opacity: isHidden ? 0 : 1
+    };
+
+    const [isMobileMenuClicked, setMobileMenuClicked] = useState<boolean>(false);
+    const [isScrolling, setIsScrolling] = useState<boolean>(false);
+
+    useMotionValueEvent(scrollY, "change", (current) => {
+        const previous = scrollY.getPrevious() ?? 0;
+
+        if (current > previous && current > 150) {
+            setToHidden(true);
+        } else {
+            setToHidden(false);
+        };
+    });
 
     useEffect(() => {
         const isHeaderScrolled = () => {
@@ -54,7 +78,18 @@ const Header = ({ ...props }: HeaderType) => {
     return (
         <Fragment>
             {/* fixed top-0 left-0 ${isScrolling && "bg-white shadow-md"} */}
-            <Wrapper className={clsx(className, `bg-white shadow-md border-b border-gray-200 w-full z-50 header-component`)}>
+            <motion.header
+            animate={{
+                ...animate,
+                position: isScrolling ? "fixed" : "static",
+                top: 0,
+                left: 0
+            }}
+            transition={{
+                duration: 0.3,
+                ease: "easeInOut"
+            }}
+            className={clsx(className, `bg-white shadow-md border-b border-gray-200 w-full z-50 header-component`)}>
                 <Padding>
                     <Wrapper className="flex justify-between items-center gap-2 md:gap-3 lg:gap-4">
                         <Logo/>
@@ -96,7 +131,7 @@ const Header = ({ ...props }: HeaderType) => {
                         {children}
                     </Wrapper>
                 </Padding>
-            </Wrapper>
+            </motion.header>
             {/* {isMobileMenuClicked && (
                 <MobileMenu
                 isMobileMenuClicked={isMobileMenuClicked}

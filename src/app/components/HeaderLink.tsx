@@ -8,6 +8,7 @@ import clsx from "clsx";
 type HeaderLinkType = {
     className?: string;
     href: string;
+    onClick?: () => void;
     children: ReactNode;
 };
 
@@ -15,6 +16,7 @@ const HeaderLink = ({ ...props }: HeaderLinkType) => {
     const {
         className,
         href,
+        onClick,
         children
     } = props;
 
@@ -22,7 +24,8 @@ const HeaderLink = ({ ...props }: HeaderLinkType) => {
         <Fragment>
             <Link
             href={href}
-            className={clsx(className, "header-link")}>
+            className={clsx(className, "header-link")}
+            onClick={onClick}>
                 {children}
             </Link>
         </Fragment>
